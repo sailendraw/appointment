@@ -13,8 +13,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component('articles', require('./components/Articles.vue'));
-//
-// const app = new Vue({
-//     el: '#app'
-// });
+Vue.component('articles', require('./components/Articles.vue'));
+Vue.component('navigationbar',require('./components/Navigationbar'));
+
+const app = new Vue({
+    el: '#navbaritem'
+});
+
