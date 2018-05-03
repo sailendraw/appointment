@@ -14,7 +14,9 @@
                         <h3>
                             About Us
                         </h3>
-                        <p>Flexor is a super flexible responsive theme with a modest design touch.</p>
+                        <p>Contineously providing
+                            psychology services
+                            to the local community</p>
                         <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i> Learn more</a>
                     </div>
                     <div class="col-md-3">
@@ -67,15 +69,15 @@
                 <div class="row">
                     <div class="col-md-8">
                         <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
-                        <a class="navbar-brand" href="index.html" title="Home">
+                        <a class="navbar-brand" href="{{ url('/') }}" title="Home">
                             <h1 class="hidden">
                                 <img src="img/logo.png" alt="Flexor Logo">
                                 Flexor
                             </h1>
                         </a>
                         <div class="navbar-slogan">
-                            Responsive HTML Theme
-                            <br> By BootstrapMade.com
+                            Mental well being
+                            <br>
                         </div>
                     </div>
                     <!--header rightside-->
@@ -108,7 +110,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="main-menu">
                         <li class="icon-link">
-                            <a href="index.html"><i class="fa fa-home"></i></a>
+                            <a href="{{ url('/') }}"><i class="fa fa-home"></i></a>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
@@ -212,7 +214,9 @@
     <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
             <h2 class="text-shadow-white">
-                We are a full digital agency based in London. We are experienced professionals in building websites, applications, mobile solutions.
+              Contineously  providing
+                psychology services
+                to the local community
                 <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
             </h2>
         </div>
@@ -221,7 +225,7 @@
     <div class="showcase block block-border-bottom-grey">
         <div class="container">
             <h2 class="block-title">
-                Showcase
+                Health Articles
             </h2>
             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
                 sit amet mauris.</p>
@@ -444,94 +448,7 @@
         </div>
     </div>
     <!-- Pricing -->
-    <div class="block-contained">
-        <h2 class="block-title">
-            Our Plans
-        </h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="panel panel-default panel-pricing text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Flex<em>Starter</em>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">$ <span class="digits">19.95</span> /mo.</div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>3 User Accounts</li>
-                            <li>3 Private Projects</li>
-                            <li>Umlimited Projects</li>
-                            <li>5GB of space</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Team<em>Starter</em>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">$ <span class="digits">49.95</span> /mo.</div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>50 User Accounts</li>
-                            <li>50 Private Projects</li>
-                            <li>Umlimited Projects</li>
-                            <li>Unlimited space</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="panel panel-default panel-pricing panel-pricing-highlighted text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Enterprise
-                            <span class="panel-pricing-popular"><i class="fa fa-thumbs-up"></i> Popular</span>
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">$ <span class="digits">199.95</span> /mo.</div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>100 User Accounts</li>
-                            <li>100 Private Projects</li>
-                            <li>Umlimited Projects</li>
-                            <li>Unlimited space</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center">
-                <div class="panel panel-default panel-pricing text-center">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            Corporate
-                        </h4>
-                    </div>
-                    <div class="panel-pricing-price">$ <span class="digits">299.95</span> /mo.</div>
-                    <div class="panel-body">
-                        <ul class="list-dotted">
-                            <li>1000 User Accounts</li>
-                            <li>1000 Private Projects</li>
-                            <li>Umlimited Projects</li>
-                            <li>Unlimited space</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary btn-sm">Choose Plan</a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!--
 Background image callout with CSS overlay
 Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQuery .block-bg-overlay = overlays the background image, colour is inherited from block-bg-* classes .block-bg-overlay-NUMBER = determines opcacity value of overlay from 1-9 (default is 5) ie. .block-bg-overlay-2 or .block-bg-overlay-6

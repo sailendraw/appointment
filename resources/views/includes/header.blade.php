@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Flexor Bootstrap Theme</title>
+    <title>XYZ 7-Day Psychology Care</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
