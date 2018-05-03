@@ -86,7 +86,7 @@
                         </ul>
                         <ul class="list-inline user-menu pull-right">
                             <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="register.html" class="text-uppercase">Register</a></li>
-                            <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="login.html" class="text-uppercase">Login</a></li>
+                            <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="{{url('login')}}" class="text-uppercase">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                                 <li class="dropdown-header">Flexor Version Pages</li>
                                 <li><a href="elements.html" tabindex="-1" class="menu-item">Elements</a></li>
                                 <li><a href="about.html" tabindex="-1" class="menu-item">About / Inner Page</a></li>
-                                <li><a href="login.html" tabindex="-1" class="menu-item">Login</a></li>
+                                <li><a href="{{ url('login') }}" tabindex="-1" class="menu-item">Login</a></li>
                                 <li><a href="register.html" tabindex="-1" class="menu-item">Sign-Up</a></li>
                                 <li class="dropdown-footer">Dropdown footer</li>
                             </ul>
