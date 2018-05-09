@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
     <meta property="og:title" content="">
     <meta property="og:image" content="">
@@ -46,10 +46,5 @@
     <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
     <link href="#" id="colour-scheme" rel="stylesheet">
 
-    <!-- =======================================================
-      Theme Name: Flexor
-      Theme URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+
 </head>

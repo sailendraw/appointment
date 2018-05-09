@@ -1,5 +1,6 @@
 @include('includes.header')
 
+
 <body class="fullscreen-centered page-login">
 <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
 <div id="background-wrapper" class="benches" data-stellar-background-ratio="0.8">
@@ -26,30 +27,42 @@
                         </h3>
                     </div>
                     <div class="panel-body">
-                        <form accept-charset="UTF-8" role="form">
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
                             <fieldset>
                                 <div class="form-group">
                                     <div class="input-group input-group-lg">
                                         <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                        @if ($errors->has('email'))
+                                            <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-lg">
                                         <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                                        <input type="password" class="form-control" placeholder="Password">
+                                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                        @if ($errors->has('password'))
+                                            <span class="invalid-feedback">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
                                         Remember Me
                                     </label>
                                 </div>
                                 <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
                             </fieldset>
                         </form>
-                        <p class="m-b-0 m-t">Not signed up? <a href="register.html">Sign up here</a>.</p>
+                        <p class="m-b-0 m-t">Not signed up? <a href="/register">Sign up here</a>.</p>
                         <div class="credits">
 
                         </div>
@@ -60,5 +73,3 @@
         <!-- /row -->
     </div>
 </div>
-
-{{--@include('includes.footer')--}}

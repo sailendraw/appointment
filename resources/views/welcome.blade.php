@@ -110,9 +110,23 @@
                 <div class="navbar-collapse collapse">
                     <div id="navbaritem">
 
-                        <navigationbar>
 
-                        </navigationbar>
+                            <ul class="nav navbar-nav" id="main-menu">
+                                <li class="icon-link">
+
+                                    <a href="/"><i class="fa fa-home"></i></a>
+                                </li>
+
+                                <li><a href="#">Health News</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Health Professionals</a></li>
+                                <li><a href="#">Make Appointment</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                {{--<li><a href="#">Help</a></li>--}}
+
+                            </ul>
+
 
                     </div>
 

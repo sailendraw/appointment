@@ -65,7 +65,7 @@
         <div class="row subfooter">
             <!--@todo: replace with company copyright details-->
             <div class="col-md-7">
-              
+
             </div>
             <div class="col-md-5">
                 <ul class="list-inline pull-right">

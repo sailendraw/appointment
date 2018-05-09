@@ -1,11 +1,10 @@
-
 <template>
 
 </template>
 
 <script>
     export default {
-        name: "Navigationbar"
+        name: "login"
     }
 </script>
 

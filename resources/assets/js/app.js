@@ -4,8 +4,12 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import ViewRouter from 'vue-router';
 
 window.Vue = require('vue');
+// var VueRouter = require('vue-router')
+Vue.use(ViewRouter)
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
