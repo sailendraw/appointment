@@ -35,5 +35,11 @@ class PageController extends Controller
 
         return view('Administrator.site_configuration',['id'=>$site_config_data->id,'name'=>$site_config_data->name,'url'=>$site_config_data->url,'slogan'=>$site_config_data->slogan]);
     }
+    public function create_user_role()
+    {
 
+        return view('Administrator.user_role');
+
+
+    }
 }
