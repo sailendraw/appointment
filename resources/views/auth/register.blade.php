@@ -26,6 +26,7 @@
                     </div>
                     <div class="panel-body">
                         <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <fieldset>
                                 <div class="form-group">
                                     <div class="input-group input-group-lg">
