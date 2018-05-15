@@ -37,7 +37,7 @@
                     <span>Home</span>
                 </a>
             </li>
-            <li>
+            {{--<li>
                 <a href="pages/typography.html">
                     <i class="material-icons">text_fields</i>
                     <span>Typography</span>
@@ -94,8 +94,8 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li>
+            </li>--}}
+            {{--<li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">swap_calls</i>
                     <span>User Interface (UI)</span>
@@ -253,33 +253,63 @@
                     </li>
                 </ul>
             </li>
+--}}
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">content_copy</i>
-                    <span>Example Pages</span>
+                    <i class="material-icons">trending_down</i>
+                    <span>Monitor</span>
                 </a>
                 <ul class="ml-menu">
                     <li>
-                        <a href="pages/examples/sign-in.html">Sign In</a>
+                        <a href="#">
+                            <span>Doctor</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="pages/examples/sign-up.html">Sign Up</a>
+                        <a href="/configuration">
+                            <span>Patient</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="pages/examples/forgot-password.html">Forgot Password</a>
+                        <a href="/configuration">
+                            <span>Site Wide Configuration</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="pages/examples/blank.html">Blank Page</a>
+                        <a href="/role">
+                            <span>Roles</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href="pages/examples/404.html">404 - Not Found</a>
-                    </li>
-                    <li>
-                        <a href="pages/examples/500.html">500 - Server Error</a>
-                    </li>
+
                 </ul>
             </li>
             <li>
+            <a href="javascript:void(0);" class="menu-toggle">
+            <i class="material-icons">content_copy</i>
+            <span>Example Pages</span>
+            </a>
+            <ul class="ml-menu">
+            <li>
+            <a href="pages/examples/sign-in.html">Sign In</a>
+            </li>
+            <li>
+            <a href="pages/examples/sign-up.html">Sign Up</a>
+            </li>
+            <li>
+            <a href="pages/examples/forgot-password.html">Forgot Password</a>
+            </li>
+            <li>
+            <a href="pages/examples/blank.html">Blank Page</a>
+            </li>
+            <li>
+            <a href="pages/examples/404.html">404 - Not Found</a>
+            </li>
+            <li>
+            <a href="pages/examples/500.html">500 - Server Error</a>
+            </li>
+        </ul>
+            </li>
+            {{--<li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">map</i>
                     <span>Maps</span>
@@ -295,27 +325,9 @@
                         <a href="pages/maps/jvectormap.html">jVectorMap</a>
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">trending_down</i>
-                    <span>Settings</span>
-                </a>
-                <ul class="ml-menu">
-                    <li>
-                        <a href="/configuration">
-                            <span>Site Wide Configuration</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/role">
-                            <span>Roles</span>
-                        </a>
-                    </li>
+            </li>--}}
 
-                </ul>
-            </li>
-            <li>
+           {{-- <li>
                 <a href="pages/changelogs.html">
                     <i class="material-icons">update</i>
                     <span>Changelogs</span>
@@ -339,7 +351,7 @@
                     <i class="material-icons col-light-blue">donut_large</i>
                     <span>Information</span>
                 </a>
-            </li>
+            </li>--}}
         </ul>
     </div>
     <!-- #Menu -->

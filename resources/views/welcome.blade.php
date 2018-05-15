@@ -146,17 +146,17 @@
                     <div class="item">
                         <div class="row">
                             <div class="col-md-6 col-md-push-6 item-caption">
-                                <h2 class="h1 text-weight-light">
-                                    Welcome to <span class="text-primary">Flexor</span>
-                                </h2>
-                                <h4>
-                                    Super flexible responsive theme with a modest design touch.
+                                <h4 class="h1 text-weight-light">
+                                    Welcome to <span class="text-primary">XYZ Online Booking System</span>
                                 </h4>
-                                <p>Perfect for your App, Web service, company or portfolio! Magna tincidunt sociis ac integer amet non. Rhoncus augue? Tempor porttitor sed, aliquet phasellus a, nisi nunc aliquet nec rhoncus enim porttitor ultrices lacus tristique?</p>
-                                <a href="https://bootstrapmade.com" class="btn btn-more btn-lg i-right">Buy Now <i class="fa fa-plus"></i></a>
+                                <h4>
+                                    Excellent Patient care is knocking your Door.
+                                </h4>
+                                <p>Making the online health care appointment possible.</p>
+                                <a href="#" class="btn btn-more btn-lg i-right">Book Now <i class="fa fa-plus"></i></a>
                             </div>
                             <div class="col-md-6 col-md-pull-6 hidden-xs">
-                                <img src="img/slides/slide1.png" alt="Slide 1" class="center-block img-responsive">
+                                <img src="img/slides/slide1.jpg" alt="Slide 1" class="center-block img-responsive">
                             </div>
                         </div>
                     </div>
@@ -165,19 +165,20 @@
                         <div class="row">
                             <div class="col-md-6 text-right-md item-caption">
                                 <h2 class="h1 text-weight-light">
-                                    <span class="text-primary">Flexor</span> Bootstrap Theme
+                                    <span class="text-primary">Appointment</span> Online Booking System
                                 </h2>
                                 <h4>
-                                    High quality, responsive theme!
+                                    High quality and reliable care on your way.
                                 </h4>
-                                <p>Perfect for your App, Web service, company or portfolio! Magna tincidunt sociis ac integer amet non. Rhoncus augue? Tempor porttitor sed, aliquet phasellus a, nisi nunc aliquet nec rhoncus enim porttitor ultrices lacus tristique?</p>
-                                <a href="https://bootstrapmade.com" class="btn btn-more btn-lg"><i class="fa fa-plus"></i> Learn More</a>
+                                <p>Making the online health care appointment possible</p>
+                                <a href=""#" class="btn btn-more btn-lg"><i class="fa fa-plus"></i> Learn More</a>
                             </div>
                             <div class="col-md-6 hidden-xs">
-                                <img src="img/slides/slide2.png" alt="Slide 2" class="center-block img-responsive">
+                                <img src="img/slides/slide2.jpg" alt="Slide 2" class="center-block img-responsive">
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -190,9 +191,7 @@
     <div class="mission text-center block block-pd-sm block-bg-noise">
         <div class="container">
             <h2 class="text-shadow-white">
-              Contineously  providing
-                psychology services
-                to the local community
+              Contineously  providing psychology services to the local community
                 <a href="about.html" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
             </h2>
         </div>
@@ -203,19 +202,20 @@
             <h2 class="block-title">
                 Health Articles
             </h2>
-            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
-                sit amet mauris.</p>
+            <p>We Have Simple & Affordable Health Insurance Options. Get A Quote In Seconds.
+                Only Pay For What You Use · Money Back Guarantee* · Not-For-Profit · Choose Your Own Provider
+                Insurance coverage: General & Major Dental, Optical, Physiotherapy, Chiropractor, Acupuncture.</p>
             <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":4, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
                 <div class="item">
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project1.png" alt="Project 1 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 1</span> </span>
+                  <span class="overlay-content"> <span class="h4">Diet Plan</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 1</a>
+                            <a href="#">Diet Plan</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -224,12 +224,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project2.png" alt="Project 2 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 2</span> </span>
+                  <span class="overlay-content"> <span class="h4">Healthy Living</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 2</a>
+                            <a href="#">Healthy Living</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -238,12 +238,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project3.png" alt="Project 3 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 3</span> </span>
+                  <span class="overlay-content"> <span class="h4">Fitness</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 3</a>
+                            <a href="#">Fitness</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -252,12 +252,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project4.png" alt="Project 4 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 4</span> </span>
+                  <span class="overlay-content"> <span class="h4">Age Care</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 4</a>
+                            <a href="#">Age Care</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -266,12 +266,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project5.png" alt="Project 5 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 5</span> </span>
+                  <span class="overlay-content"> <span class="h4">Medical aid</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 5</a>
+                            <a href="#">Medical Aid</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -280,12 +280,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project6.png" alt="Project 6 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 6</span> </span>
+                  <span class="overlay-content"> <span class="h4">Online Care</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 6</a>
+                            <a href="#">Online Care</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -294,12 +294,12 @@
                     <a href="#" class="overlay-wrapper">
                         <img src="img/showcase/project7.png" alt="Project 7 image" class="img-responsive underlay">
                         <span class="overlay">
-                  <span class="overlay-content"> <span class="h4">Project 7</span> </span>
+                  <span class="overlay-content"> <span class="h4">Online Doctor</span> </span>
                 </span>
                     </a>
                     <div class="item-details bg-noise">
                         <h4 class="item-title">
-                            <a href="#">Project 7</a>
+                            <a href="#">Online Doctor</a>
                         </h4>
                         <a href="#" class="btn btn-more"><i class="fa fa-plus"></i>Read more</a>
                     </div>
@@ -389,7 +389,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-group fa-stack-1x fa-inverse"></i> </span>
                     <h4 class="text-weight-strong">
-                        User Experience / Information Architecture
+                        Online Doctor
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -400,8 +400,7 @@
             <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-pencil fa-stack-1x fa-inverse"></i> </span>
-                    <h4 class="text-weight-strong">
-                        User Interface Design / User Interface Theming
+                    <h4> Online Booking
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -412,8 +411,7 @@
             <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-cogs fa-stack-1x fa-inverse"></i> </span>
-                    <h4 class="text-weight-strong">
-                        Code &amp; Development / Implementation Support
+                    <h4 class="text-weight-strong">Support
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -449,12 +447,12 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
                     Testimonials
                 </h3>
                 <blockquote>
-                    <p>Our productivity &amp; sales are up! Customers are happy &amp; we couldn't be happier with this product!</p>
+                    <p>Customers are happy &amp;                                                                                                                           </p>
                     <img src="img/misc/charles-quote.png" alt="Charles Spencer Chaplin">
                     <small>
-                        <strong>Charles Chaplin</strong>
+                        <strong>Online Doctor</strong>
                         <br>
-                        British comic actor
+                        27 x 7 Care
                     </small>
                 </blockquote>
             </div>
@@ -471,15 +469,15 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
-                            <a href="#" class="text-weight-strong">amet urna integer urna enim, sit arcu pid in nec?</a>
+                            <a href="#" class="text-weight-strong">Blog 1</a>
                         </h4>
                         <!-- Meta details mobile -->
                         <ul class="list-inline meta text-muted visible-xs">
                             <li><i class="fa fa-calendar"></i> <span class="visible-md">Created:</span> Fri 1st Feb 2013</li>
-                            <li><i class="fa fa-user"></i> <a href="#">Joe</a></li>
+                            <li><i class="fa fa-user"></i> <a href="#">Ashish</a></li>
                         </ul>
                         <p>
-                            Ut <strong>commodo ullamcorper risus nec</strong> mattis. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            Ut <strong>Health</strong> care
                             <a href="#">Read more <i class="fa fa-angle-right"></i></a>
                         </p>
                     </div>
@@ -492,7 +490,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">
-                            <a href="#" class="text-weight-strong">a nec in sed hac ultrices cursus</a>
+                            <a href="#" class="text-weight-strong">blogss !</a>
                         </h4>
                         <!-- Meta details mobile -->
                         <ul class="list-inline meta text-muted visible-xs">

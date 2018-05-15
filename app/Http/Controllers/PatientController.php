@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Input;
+
 use Illuminate\Http\Request;
-use App\Role;
-class RoleController extends Controller
+
+class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +13,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        return view('Administrator.user_role');
+        //
     }
 
     /**
@@ -24,11 +23,6 @@ class RoleController extends Controller
      */
     public function create()
     {
-         $Role = New Role();
-        $Role->name = Input::get('role_name');
-        $Role->created_by = Auth::user()->name;
-        $Role->save();
-        $this->index();
         //
     }
 

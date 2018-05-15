@@ -20,3 +20,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('SaveConfig','SiteConfigController@SaveConfig');
 Route::get('/role','PageController@create_user_role');
 Route::post('create','RoleController@create');
+Route::resource('Doctor','DoctorController');
+Route::resource('Patient','PatientController');
