@@ -1,5 +1,5 @@
 <aside id="leftsidebar" class="sidebar">
-    <!-- User Info -->
+<!-- User Info -->
     <div class="user-info">
         <div class="image">
             <img src="{{ asset('dashboardimage/images/user.png') }}" width="48" height="48" alt="User" />
@@ -18,7 +18,7 @@
                     <li role="seperator" class="divider"></li>
                     <li><a  href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-                         document.getElementById('logout-form').submit();"><i class="material-icons">input</i>{{ __('Logout') }}</a></li>
+                                    document.getElementById('logout-form').submit();"><i class="material-icons">input</i>{{ __('Logout') }}</a></li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
@@ -26,12 +26,16 @@
             </div>
         </div>
     </div>
-    <!-- #User Info -->
-    <!-- Menu -->
+<!-- #User Info -->
+<!-- Menu -->
+
     <div class="menu">
         <ul class="list">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">MAIN NAVIGATION
+            </li>
+            @include('includes.notifications')
             <li class="active">
+
                 <a href="/home">
                     <i class="material-icons">home</i>
                     <span>Home</span>
@@ -284,30 +288,30 @@
                 </ul>
             </li>
             <li>
-            <a href="javascript:void(0);" class="menu-toggle">
-            <i class="material-icons">content_copy</i>
-            <span>Example Pages</span>
-            </a>
-            <ul class="ml-menu">
-            <li>
-            <a href="pages/examples/sign-in.html">Sign In</a>
-            </li>
-            <li>
-            <a href="pages/examples/sign-up.html">Sign Up</a>
-            </li>
-            <li>
-            <a href="pages/examples/forgot-password.html">Forgot Password</a>
-            </li>
-            <li>
-            <a href="pages/examples/blank.html">Blank Page</a>
-            </li>
-            <li>
-            <a href="pages/examples/404.html">404 - Not Found</a>
-            </li>
-            <li>
-            <a href="pages/examples/500.html">500 - Server Error</a>
-            </li>
-        </ul>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">content_copy</i>
+                    <span>Example Pages</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/examples/sign-in.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/sign-up.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/forgot-password.html">Forgot Password</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/blank.html">Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/404.html">404 - Not Found</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/500.html">500 - Server Error</a>
+                    </li>
+                </ul>
             </li>
             {{--<li>
                 <a href="javascript:void(0);" class="menu-toggle">
@@ -327,35 +331,35 @@
                 </ul>
             </li>--}}
 
-           {{-- <li>
-                <a href="pages/changelogs.html">
-                    <i class="material-icons">update</i>
-                    <span>Changelogs</span>
-                </a>
-            </li>
-            <li class="header">LABELS</li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-red">donut_large</i>
-                    <span>Important</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-amber">donut_large</i>
-                    <span>Warning</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-light-blue">donut_large</i>
-                    <span>Information</span>
-                </a>
-            </li>--}}
+            {{-- <li>
+                 <a href="pages/changelogs.html">
+                     <i class="material-icons">update</i>
+                     <span>Changelogs</span>
+                 </a>
+             </li>
+             <li class="header">LABELS</li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-red">donut_large</i>
+                     <span>Important</span>
+                 </a>
+             </li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-amber">donut_large</i>
+                     <span>Warning</span>
+                 </a>
+             </li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-light-blue">donut_large</i>
+                     <span>Information</span>
+                 </a>
+             </li>--}}
         </ul>
     </div>
-    <!-- #Menu -->
-    <!-- Footer -->
+<!-- #Menu -->
+<!-- Footer -->
     <div class="legal">
         <div class="copyright">
             &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
@@ -364,5 +368,5 @@
             <b>Version: </b> 1.0.5
         </div>
     </div>
-    <!-- #Footer -->
+<!-- #Footer -->
 </aside>

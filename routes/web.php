@@ -22,3 +22,5 @@ Route::get('/role','PageController@create_user_role');
 Route::post('create','RoleController@create');
 Route::resource('Doctor','DoctorController');
 Route::resource('Patient','PatientController');
+Route::resource('article','ArticleController');
+Route::resource('blog','BlogController');

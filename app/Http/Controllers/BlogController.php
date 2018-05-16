@@ -2,23 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Doctor;
-use App\Http\Requests\Doctor as DoctorRequest;
+use App\Http\Requests\BlogRequest;
+use App\Models\Blogs;
 use App\SiteConfig;
 
-/**
- * Class DoctorController
- * @package App\Http\Controllers
- */
-class DoctorController extends Controller
+class BlogController extends Controller
 {
     /**
      * @var
      */
-    public $doctor;
-    public function __construct(Doctor $doctor)
+    public $blog;
+    public function __construct(Blogs $blog)
     {
-        $this->doctor=$doctor;
+        $this->blog = $blog;
         $this->middleware('auth');
     }
     /**
@@ -28,9 +24,9 @@ class DoctorController extends Controller
      */
     public function index()
     {
-        $doctorData = $this->doctor->getAll();
+        $blogData = $this->blog->getAll();
         $site_config_data = SiteConfig::all('id','name','url','slogan')->first();
-        return view('doctor.index',['doctorData'=>$doctorData,'sitename'=>$site_config_data->name,'url'=>$site_config_data->url,'slogan'=>$site_config_data->slogan]);
+        return view('blog.index',['blogData'=>$blogData,'sitename'=>$site_config_data->name,'url'=>$site_config_data->url,'slogan'=>$site_config_data->slogan]);
     }
 
     /**
@@ -40,7 +36,7 @@ class DoctorController extends Controller
      */
     public function create()
     {
-        return view('doctor.create');
+        return view('blog.create');
     }
 
     /**
@@ -49,16 +45,14 @@ class DoctorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( DoctorRequest $request)
+    public function store( BlogRequest $request)
     {
-        //dd($request->all());
-        $doctorModel =$this->doctor->saveDoctor($request->all());
-
-        if (!$doctorModel) {
+        $blogModel =$this->blog->saveBlog($request->all());
+        if (!$blogModel) {
             return redirect()->back()->withError('Error while adding ');
         }
 
-        return redirect()->route('doctor.show', $doctorModel->id)->withSuccess(' added successfully');
+        return redirect()->route('blog.show', $blogModel->id)->withSuccess(' added successfully');
     }
 
     /**
@@ -69,10 +63,10 @@ class DoctorController extends Controller
      */
     public function show($id)
     {
-        $doctor = $this->doctor->findWithDetail($id);
+        $blog = $this->blog->findWithDetail($id);
 
 
-        return view('doctor.show', compact('doctor'));
+        return view('blog.show', compact('blog'));
     }
 
     /**
@@ -83,10 +77,10 @@ class DoctorController extends Controller
      */
     public function edit($id)
     {
-        $doctor      = $this->doctor->findWithDetail($id);
+        $blog      = $this->blog->findWithDetail($id);
 
 
-        return view('doctor.edit', compact('doctor'));
+        return view('blog.edit', compact('blog'));
     }
 
     /**
@@ -96,15 +90,16 @@ class DoctorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(DoctorRequest $request, $id)
+    public function update(BlogRequest $request, $id)
     {
-        $updated = $this->doctor->updateDoctor($id, $request->all());
+        dd('aa');
+        $updated = $this->blog->updateBlog($id, $request->all());
 
         if (!$updated) {
-            return redirect()->route('doctor.index')->withError("Doctor Details Not Updated");
+            return redirect()->route('blog.index')->withError("Blogs Details Not Updated");
         }
 
-        return redirect()->route('Doctor.show',$id)->withSuccess("Doctor Details Updated Successfully");
+        return redirect()->route('blog.show',$id)->withSuccess("Blogs Details Updated Successfully");
     }
 
     /**
@@ -115,6 +110,12 @@ class DoctorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $updated = $this->blog->deleteBlog($id);
+
+        if (!$updated) {
+            return redirect()->route('blog.index')->withError("Blogs Details Not Updated");
+        }
+
+        return redirect()->route('blog.index')->withSuccess("Blogs Details Updated Successfully");
     }
 }
