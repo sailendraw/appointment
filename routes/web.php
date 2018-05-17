@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', 'PageController@home');
+Route::get('/','FrontendController@index')->name('/');
+Route::get('/aboutUs','FrontendController@aboutUs')->name('aboutUs');
+Route::get('/articleShow/{param}', ['as' => 'articleShow', 'uses' => 'FrontendController@articleShow']);
+Route::get('/blogShow/{param}', ['as' => 'blogShow', 'uses' => 'FrontendController@blogShow']);
 Route::get('/login','PageController@login');
 Route::get('/configuration','PageController@site_configuration');
 Auth::routes();
@@ -24,3 +27,5 @@ Route::resource('Doctor','DoctorController');
 Route::resource('Patient','PatientController');
 Route::resource('article','ArticleController');
 Route::resource('blog','BlogController');
+
+

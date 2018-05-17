@@ -19,4 +19,8 @@ class BlogsEntities extends Model
         'publish',
         'delete_flag'
     ];
+    public function getCreatedAtAttribute($date)
+    {
+        return date('d', strtotime($date));
+    }
 }
