@@ -22,15 +22,13 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('SaveConfig','SiteConfigController@SaveConfig');
 Route::get('/role','PageController@create_user_role');
-<<<<<<< HEAD
+
 Route::post('save_role','UserRoleController@save_role');
 Route::get('profile','PageController@user_profile');
-=======
+
 Route::post('create','RoleController@create');
 Route::resource('Doctor','DoctorController');
 Route::resource('Patient','PatientController');
 Route::resource('article','ArticleController');
 Route::resource('blog','BlogController');
 
-
->>>>>>> cbdc43c401278142f4e4385e78ff47f3d60ef4ed
