@@ -23,7 +23,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            Login
+                            XYZ Online Booking System Login
                         </h3>
                     </div>
                     <div class="panel-body">

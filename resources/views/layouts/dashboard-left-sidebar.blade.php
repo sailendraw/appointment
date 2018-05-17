@@ -1,5 +1,5 @@
 <aside id="leftsidebar" class="sidebar">
-    <!-- User Info -->
+<!-- User Info -->
     <div class="user-info">
         <div class="image">
             <img src="{{ asset('dashboardimage/images/user.png') }}" width="48" height="48" alt="User" />
@@ -14,7 +14,7 @@
                     <li role="seperator" class="divider"></li>
                     <li><a  href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-                         document.getElementById('logout-form').submit();"><i class="material-icons">input</i>{{ __('Logout') }}</a></li>
+                                    document.getElementById('logout-form').submit();"><i class="material-icons">input</i>{{ __('Logout') }}</a></li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
@@ -22,18 +22,22 @@
             </div>
         </div>
     </div>
-    <!-- #User Info -->
-    <!-- Menu -->
+<!-- #User Info -->
+<!-- Menu -->
+
     <div class="menu">
         <ul class="list">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">MAIN NAVIGATION
+            </li>
+            @include('includes.notifications')
             <li class="active">
+
                 <a href="/home">
                     <i class="material-icons">home</i>
                     <span>Home</span>
                 </a>
             </li>
-            <li>
+            {{--<li>
                 <a href="pages/typography.html">
                     <i class="material-icons">text_fields</i>
                     <span>Typography</span>
@@ -90,8 +94,8 @@
                         </ul>
                     </li>
                 </ul>
-            </li>
-            <li>
+            </li>--}}
+            {{--<li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">swap_calls</i>
                     <span>User Interface (UI)</span>
@@ -249,6 +253,36 @@
                     </li>
                 </ul>
             </li>
+--}}
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">trending_down</i>
+                    <span>Monitor</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="#">
+                            <span>Doctor</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/configuration">
+                            <span>Patient</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/configuration">
+                            <span>Site Wide Configuration</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/role">
+                            <span>Roles</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">content_copy</i>
@@ -275,7 +309,7 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            {{--<li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <i class="material-icons">map</i>
                     <span>Maps</span>
@@ -291,55 +325,37 @@
                         <a href="pages/maps/jvectormap.html">jVectorMap</a>
                     </li>
                 </ul>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">trending_down</i>
-                    <span>Settings</span>
-                </a>
-                <ul class="ml-menu">
-                    <li>
-                        <a href="/configuration">
-                            <span>Site Wide Configuration</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/role">
-                            <span>Roles</span>
-                        </a>
-                    </li>
+            </li>--}}
 
-                </ul>
-            </li>
-            <li>
-                <a href="pages/changelogs.html">
-                    <i class="material-icons">update</i>
-                    <span>Changelogs</span>
-                </a>
-            </li>
-            <li class="header">LABELS</li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-red">donut_large</i>
-                    <span>Important</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-amber">donut_large</i>
-                    <span>Warning</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript:void(0);">
-                    <i class="material-icons col-light-blue">donut_large</i>
-                    <span>Information</span>
-                </a>
-            </li>
+            {{-- <li>
+                 <a href="pages/changelogs.html">
+                     <i class="material-icons">update</i>
+                     <span>Changelogs</span>
+                 </a>
+             </li>
+             <li class="header">LABELS</li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-red">donut_large</i>
+                     <span>Important</span>
+                 </a>
+             </li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-amber">donut_large</i>
+                     <span>Warning</span>
+                 </a>
+             </li>
+             <li>
+                 <a href="javascript:void(0);">
+                     <i class="material-icons col-light-blue">donut_large</i>
+                     <span>Information</span>
+                 </a>
+             </li>--}}
         </ul>
     </div>
-    <!-- #Menu -->
-    <!-- Footer -->
+<!-- #Menu -->
+<!-- Footer -->
     <div class="legal">
         <div class="copyright">
             &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
@@ -348,5 +364,5 @@
             <b>Version: </b> 1.0.5
         </div>
     </div>
-    <!-- #Footer -->
+<!-- #Footer -->
 </aside>

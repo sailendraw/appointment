@@ -66,21 +66,13 @@
 								</li>
 							</ul>
 						</div>
+<<<<<<< HEAD
 						<div class="body">
 							<form method="post" action="{{ action('UserRoleController@save_role') }}" enctype="multipart/form-data">
 								@csrf
+=======
+>>>>>>> cbdc43c401278142f4e4385e78ff47f3d60ef4ed
 
-								<input type="hidden" id="role_id" name="role_id" class="form-control" placeholder="Enter website name" value="" required>
-								<label for="email_address">Role Name</label>
-								<div class="form-group">
-									<div class="form-line">
-										<input type="text" id="role_name" name="role_name" class="form-control"  value="" placeholder="Enter website name" required>
-									</div>
-								</div>
-								<br>
-								<input type="submit" class="btn btn-primary m-t-15 waves-effect"></input>
-							</form>
-						</div>
 					</div>
 				</div>
 			</div>

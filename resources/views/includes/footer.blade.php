@@ -6,18 +6,18 @@
 
             <div class="col-md-3">
                 <address>
-                    <strong>Flexor Bootstrap Theme Inc</strong>
+                    <strong>XYZ Online Booking</strong>
                     <br>
                     <i class="fa fa-map-pin fa-fw text-primary"></i> Sunshine House, Sunville. SUN12
                     <br>
                     <i class="fa fa-phone fa-fw text-primary"></i> 019223 8092344
                     <br>
-                    <i class="fa fa-envelope-o fa-fw text-primary"></i> info@flexorinc.com
+                    <i class="fa fa-envelope-o fa-fw text-primary"></i> softwareDevelopment@cqu.com
                     <br>
                 </address>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6" id="contactUs">
                 <h4 class="text-uppercase">
                     Contact Us
                 </h4>
