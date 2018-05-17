@@ -55,7 +55,7 @@
 					<div class="card">
 						<div class="header">
 							<h2>
-								Create User Role
+								My Account Settings
 							</h2>
 							<ul class="header-dropdown m-r--5">
 								<li class="dropdown">
@@ -67,71 +67,41 @@
 							</ul>
 						</div>
 						<div class="body">
-							<form method="post" action="{{ action('UserRoleController@save_role') }}" enctype="multipart/form-data">
+							<form method="POST" action="{{ route('register') }}">
 								@csrf
-
-								<input type="hidden" id="role_id" name="role_id" class="form-control" placeholder="Enter website name" value="" required>
-								<label for="email_address">Role Name</label>
+								<label for="email_address">Name</label>
 								<div class="form-group">
 									<div class="form-line">
-										<input type="text" id="role_name" name="role_name" class="form-control"  value="" placeholder="Enter website name" required>
+										<input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
 									</div>
 								</div>
-								<br>
-								<input type="submit" class="btn btn-primary m-t-15 waves-effect"></input>
+								<label for="email_address">Email</label>
+								<div class="form-group">
+									<div class="form-line">
+										<input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+									</div>
+								</div>
+								<label for="email_address">Password</label>
+								<div class="form-group">
+									<div class="form-line">
+										<input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+									</div>
+								</div>
+								<label for="email_address">Confirm Password</label>
+								<div class="form-group">
+									<div class="form-line">
+										<input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+									</div>
+								</div>
+
+
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row clearfix">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="card">
-						<div class="header">
-							<h2>
-								List of Users
-							</h2>
-							<ul class="header-dropdown m-r--5">
-								<li class="dropdown">
-									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-										<i class="material-icons">more_vert</i>
-									</a>
 
-								</li>
-							</ul>
-						</div>
-						<div class="body table-responsive">
-							<table class="table">
-								<thead>
-								<tr>
-									<th>#</th>
-									<th>Name</th>
-									<th>Created By</th>
-									<th>Creation Date</th>
-									<th>Action</th>
-								</tr>
-								</thead>
-								<tbody>
-							@foreach($role as $userrole)
-
-								<tr>
-									<th scope="row">{{$userrole->id}}</th>
-									<td>{{$userrole->name}}</td>
-									<td>{{$userrole->created_by}}</td>
-									<td>{{$userrole->created_at}}</td>
-									<td><button class="btn btn-primary m-t-15 waves-effect">Edit</button>&nbsp;<button class="btn btn-primary m-t-15 waves-effect">Delete</button></td>
-								</tr>
-
-								@endforeach
-
-
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
 
 
 			<!-- #END# Vertical Layout -->
