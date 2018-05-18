@@ -33,3 +33,5 @@ Route::resource('article','ArticleController');
 Route::resource('blog','BlogController');
 Route::get('/listdoctors','DoctorController@listdoctors');
 Route::get('/appointment-help','PageController@help');
+Route::get('/makeappointment/{param}',['as'=>'new','uses'=>'PageController@makeappointment']);
+Route::resource('appointment','AppoinmentController');

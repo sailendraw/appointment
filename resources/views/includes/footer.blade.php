@@ -89,6 +89,14 @@
 <script src="{{ asset('css/lib/waypoints/waypoints.min.js') }}"></script>
 <script src="{{ asset('css/lib/counterup/counterup.min.js') }}"></script>
 <script src="{{ asset('contactform/contactform.js') }}"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( "#time" ).datepicker();
+    });
+</script>
 
 <!-- Template Specisifc Custom Javascript File -->
 <script src="{{ asset('js/custom.js') }} "></script>

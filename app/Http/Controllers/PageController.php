@@ -48,4 +48,8 @@ class PageController extends Controller
     {
         dd("test");
     }
+    public function makeappointment($doctorid)
+    {
+        return view('appointment.makeappointment',['doctorid'=>$doctorid]);
+    }
 }

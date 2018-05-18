@@ -53,19 +53,10 @@
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">trending_down</i>
-                        <span>Monitor</span>
+                        <span>System Configuration</span>
                     </a>
                     <ul class="ml-menu">
-                        <li>
-                            <a href="#">
-                                <span>Doctor</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/configuration">
-                                <span>Patient</span>
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/configuration">
                                 <span>Site Wide Configuration</span>
@@ -80,32 +71,35 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">content_copy</i>
-                        <span>Example Pages</span>
+                    <a href="/Doctor">
+                        <span>Doctor</span>
                     </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="pages/examples/sign-in.html">Sign In</a>
-                        </li>
-                        <li>
-                            <a href="pages/examples/sign-up.html">Sign Up</a>
-                        </li>
-                        <li>
-                            <a href="pages/examples/forgot-password.html">Forgot Password</a>
-                        </li>
-                        <li>
-                            <a href="pages/examples/blank.html">Blank Page</a>
-                        </li>
-                        <li>
-                            <a href="pages/examples/404.html">404 - Not Found</a>
-                        </li>
-                        <li>
-                            <a href="pages/examples/500.html">500 - Server Error</a>
-                        </li>
-                    </ul>
                 </li>
-        </ul>
+                <li>
+                    <a href="/Patients">
+                        <span>Patient</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/appointment">
+                        <span>Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Report">
+                        <span>Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/article">
+                        <span>Article</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/Blog">
+                        <span>Blog</span>
+                    </a>
+                </li>
             @endif
 
 

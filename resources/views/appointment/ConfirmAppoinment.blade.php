@@ -58,42 +58,22 @@
 
 <!-- ======== @Region: #content ======== -->
 <div id="content">
-	<div class="block-contained">
-		<h2 class="block-title">
-			Health Professionals
-		</h2>
-		<div class="row">
-			@if(count($doctorData)>0)
-				@foreach($doctorData as $dData)
-					<div class="col-md-3">
-						<div class="panel panel-default panel-pricing text-center">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									{{$dData->first_name}}
-								</h4>
-							</div>
-							<div class="panel-pricing-price">{{$dData->first_name}} <span class="digits">{{$dData->last_name}}</span> </div>
-							<div class="panel-body">
-								<ul class="list-dotted">
-									<li><strong>Qualification: </strong>{{$dData->qualification}}</li>
-									<li><strong>Experience :</strong>{{$dData->experience}}</li>
-									<li><strong>Speciality :</strong>{{$dData->speciality}}</li>
-								</ul>
-								<a href="makeappointment/{{$dData->id}}" class="btn btn-primary btn-sm" data-doctorid="{{$dData->id}}">Make an Appointment</a>
-							</div>
-						</div>
-					</div>
-					@endforeach
-
-				@else
-				<p>There are No doctors registered !!!</p>
-			@endif
+	<div class="container">
+		<h2>Appointment Confirmed</h2>
+		Dear {{Auth::user()->name}} Your appointment has been confirmed. Confirmation Email has been sent to your email address
 
 
-		</div>
 	</div>
 
 </div>
+<!-- /content -->
+<!-- Call out block -->
+<div class="block block-pd-sm block-bg-primary">
+	<div class="container">
+
+	</div>
+</div>
+
 @include('includes.footer')
 </body>
 
