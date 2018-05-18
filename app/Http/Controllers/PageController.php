@@ -44,4 +44,8 @@ class PageController extends Controller
     {
         return view('Administrator.user_profile');
     }
+    public function help()
+    {
+        dd("test");
+    }
 }

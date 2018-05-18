@@ -31,4 +31,5 @@ Route::resource('Doctor','DoctorController');
 Route::resource('Patient','PatientController');
 Route::resource('article','ArticleController');
 Route::resource('blog','BlogController');
-
+Route::get('/listdoctors','DoctorController@listdoctors');
+Route::get('/appointment-help','PageController@help');

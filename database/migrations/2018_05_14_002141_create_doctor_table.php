@@ -28,7 +28,11 @@ class CreateDoctorTable extends Migration
             $table->string('qualification',50);
             $table->string('experience', 50);
             $table->string('speciality', 50);
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+        });
+        Schema::table('doctors',function(Blueprint $table){
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

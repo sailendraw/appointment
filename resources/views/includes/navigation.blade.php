@@ -46,7 +46,7 @@
                         <li class="user-button"><a class="btn btn-primary btn-hh-trigger" role="button" data-toggle="collapse" data-target=".header-hidden">Open</a></li>
                     </ul>
                     <ul class="list-inline user-menu pull-right">
-                        <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="{{url('login')}}" class="text-uppercase">Register</a></li>
+                        <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="{{url('register')}}" class="text-uppercase">Register</a></li>
                         <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="{{url('login')}}" class="text-uppercase">Login</a></li>
                     </ul>
                 </div>
@@ -76,10 +76,10 @@
                             <a href="{{ URL::route('/')}}"><i class="fa fa-home"></i></a>
                         </li>
 
-                        <li><a href="#article">Make Appointment</a></li>
-                        <li><a href="#article">Health News</a></li>
-                        <li><a href="#blogs">Blog</a></li>
-                        <li><a href="#">Health Professionals</a></li>
+                        <li><a href="/appointment-help">Appointment Help</a></li>
+                        <li><a href="/article">Health News</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/listdoctors">Health Professionals</a></li>
 
                     </ul>
 

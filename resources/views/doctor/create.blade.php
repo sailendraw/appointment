@@ -62,7 +62,7 @@
                         <div class="body">
                             @include('errors.validationErrors')
                             {!! Form::open(['route' => 'Doctor.store', 'method' => 'post', 'class' => 'form-horizontal custom-form clearfix', 'role' => 'form', 'files' => 'true']) !!}
-                            @include('doctor.form',['btn'=>'Add Doctor Detail', 'create' => true]);
+                            @include('doctor.form',['btn'=>'Add Doctor Detail', 'create' => true])
 
                                 {!! Form::close() !!}
                         </div>

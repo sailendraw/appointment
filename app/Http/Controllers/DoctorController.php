@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use App\Models\Doctor;
 use App\Http\Requests\Doctor as DoctorRequest;
 use App\SiteConfig;
@@ -19,7 +21,7 @@ class DoctorController extends Controller
     public function __construct(Doctor $doctor)
     {
         $this->doctor=$doctor;
-        $this->middleware('auth');
+
     }
     /**
      * Display a listing of the resource.
@@ -28,6 +30,7 @@ class DoctorController extends Controller
      */
     public function index()
     {
+        $this->middleware('Auth');
         $doctorData = $this->doctor->getAll();
         $site_config_data = SiteConfig::all('id','name','url','slogan')->first();
         return view('doctor.index',['doctorData'=>$doctorData,'sitename'=>$site_config_data->name,'url'=>$site_config_data->url,'slogan'=>$site_config_data->slogan]);
@@ -40,6 +43,7 @@ class DoctorController extends Controller
      */
     public function create()
     {
+        $this->middleware('Auth');
         return view('doctor.create');
     }
 
@@ -51,14 +55,27 @@ class DoctorController extends Controller
      */
     public function store( DoctorRequest $request)
     {
-        //dd($request->all());
-        $doctorModel =$this->doctor->saveDoctor($request->all());
+        $UsersDetail = (object)$request->all();
+        $user = [
+            'name' => $UsersDetail->first_name,
+            'email' => $UsersDetail->email,
+            'role'=>$UsersDetail->role,
+            'password' => Hash::make($UsersDetail->password),
+
+        ];
+        $registerdoctor = new RegisterController();
+        $userid=$registerdoctor->RegisterDoctor($user);
+       $newArray = $request->all();
+       $newArray['user_id']=$userid->id;
+
+        $this->middleware('auth');
+            $doctorModel =$this->doctor->saveDoctor($newArray);
 
         if (!$doctorModel) {
             return redirect()->back()->withError('Error while adding ');
         }
 
-        return redirect()->route('doctor.show', $doctorModel->id)->withSuccess(' added successfully');
+        return view('doctor.index', $doctorModel->id)->withSuccess(' added successfully');
     }
 
     /**
@@ -83,6 +100,7 @@ class DoctorController extends Controller
      */
     public function edit($id)
     {
+        $this->middleware('auth');
         $doctor      = $this->doctor->findWithDetail($id);
 
 
@@ -98,6 +116,7 @@ class DoctorController extends Controller
      */
     public function update(DoctorRequest $request, $id)
     {
+        $this->middleware('auth');
         $updated = $this->doctor->updateDoctor($id, $request->all());
 
         if (!$updated) {
@@ -115,6 +134,13 @@ class DoctorController extends Controller
      */
     public function destroy($id)
     {
+        $this->middleware('auth');
         //
+    }
+    public function listdoctors()
+    {
+        $doctorData = $this->doctor->getAll();
+        $site_config_data = SiteConfig::all('id','name','url','slogan')->first();
+        return view('doctor.listdoctors',['doctorData'=>$doctorData,'sitename'=>$site_config_data->name,'url'=>$site_config_data->url,'slogan'=>$site_config_data->slogan]);
     }
 }

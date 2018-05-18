@@ -29,6 +29,7 @@ class Doctors extends Model
         'qualification',
         'experience',
         'speciality',
+        'user_id'
     ];
     /**
      * Accessor for custom 'full_name' attribute.

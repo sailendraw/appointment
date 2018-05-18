@@ -75,7 +75,7 @@
                                         @endif
                                     </div>
                                 </div>
-
+                                <input type="hidden" id="role" name="role" value="1"/>
 
                                 <div class="checkbox">
                                     <label>
