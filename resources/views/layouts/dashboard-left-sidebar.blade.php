@@ -49,6 +49,7 @@
                 <li><a href="/myblog">My Blog</a> </li>
                 @elseif(Auth::user()->role==1)
                 <li><a href="/appointment">My Appointment</a></li>
+                <li><a href="/">Visit Website</a> </li>
                 @else
                 <li>
                     <a href="javascript:void(0);" class="menu-toggle">
