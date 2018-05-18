@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AppoinmentController extends Controller
 {
@@ -15,11 +16,12 @@ class AppoinmentController extends Controller
     public function __construct(Appointment $appointment)
     {
         $this->AppointmentModel = $appointment;
-    }
+       }
 
     public function index()
     {
-        //
+        $this->middleware('auth');
+        return view('appointment.myappointment',['appointmentdata'=>$this->show(Auth::user()->id)]);
     }
 
     /**
@@ -29,7 +31,7 @@ class AppoinmentController extends Controller
      */
     public function create()
     {
-        dd('test');
+
     }
 
     /**
@@ -42,7 +44,7 @@ class AppoinmentController extends Controller
     {
         $this->AppointmentModel->fill($request->all());
         $this->AppointmentModel->save();
-return view('appointment.ConfirmAppoinment');
+        return view('appointment.ConfirmAppoinment');
     }
 
     /**
@@ -53,7 +55,8 @@ return view('appointment.ConfirmAppoinment');
      */
     public function show($id)
     {
-        //
+        return Appointment::all()->where('userid','=',$id);
+
     }
 
     /**
@@ -88,5 +91,9 @@ return view('appointment.ConfirmAppoinment');
     public function destroy($id)
     {
         //
+    }
+    public function myappointment()
+    {
+
     }
 }
