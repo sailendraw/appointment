@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Appointment;
+use App\Models\Doctor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -55,7 +56,8 @@ class AppoinmentController extends Controller
      */
     public function show($id)
     {
-        return Appointment::all()->where('userid','=',$id);
+      return $this->AppointmentModel->patient_appoinment(Auth::user()->id);
+
 
     }
 
@@ -95,5 +97,15 @@ class AppoinmentController extends Controller
     public function myappointment()
     {
 
+    }
+    public function create_appointment_ajax_request(Request $request)
+    {
+        $this->AppointmentModel->fill($request->all());
+        if ($this->AppointmentModel->save()) {
+            return 'success';
+        }
+        else{
+            return 'failed';
+        }
     }
 }

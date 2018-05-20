@@ -35,3 +35,6 @@ Route::get('/listdoctors','DoctorController@listdoctors');
 Route::get('/appointment-help','PageController@help');
 Route::get('/makeappointment/{param}',['as'=>'new','uses'=>'PageController@makeappointment']);
 Route::resource('appointment','AppoinmentController');
+Route::get('/mydoctors','PageController@mydoctors');
+Route::get('/patients','PageController@patients');
+Route::post('/CreateAppointment','AppoinmentController@create_appointment_ajax_request');

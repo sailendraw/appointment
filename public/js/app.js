@@ -236,7 +236,69 @@ Vue.component('articles', __webpack_require__(9));
 Vue.component('navigationbar', __webpack_require__(11));
 
 var app = new Vue({
-  el: '#navbaritem'
+    el: '#navbaritem'
+});
+
+$('.patientappointment').on('click', function () {
+    bootbox.prompt({
+        title: "Choose Date to update",
+        inputType: 'date',
+        callback: function callback(result) {
+            if (result == '') {
+                booptbox.alert("Please Choose proper date format.");
+            } else {}
+        }
+    });
+});
+$('.cancelappointment').on('click', function () {
+    bootbox.confirm({
+        title: "Cancel Appointment",
+        message: "Do you want to cancel your appointment ?",
+        buttons: {
+            cancel: {
+                label: '<i class="fa fa-times"></i> Cancel'
+            },
+            confirm: {
+                label: '<i class="fa fa-check"></i> Confirm'
+            }
+        },
+        callback: function callback(result) {
+            console.log('This was logged in the callback: ' + result);
+        }
+    });
+});
+$('.scheduleappointment').on('click', function () {
+    var doctorid = $(this).data('id');
+    var patientid = $(this).data('patientid');
+
+    bootbox.prompt({
+        title: "Please choose date to make an appointment",
+        inputType: 'date',
+        callback: function callback(result) {
+            if (result == '') {
+                bootbox.alert("you cannot choose empty date for appointment");
+            } else {
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'CreateAppointment',
+                    data: {
+                        '_token': $('input[name=_token]').val(),
+                        'doctor': doctorid,
+                        'userid': patientid,
+                        'time': result,
+                        'description': 'No Description'
+                    },
+                    success: function success(data) {
+                        if (data == 'success') {
+                            bootbox.alert("Your appointment has been saved, we will let you know soon");
+                        }
+                    }
+
+                });
+            }
+        }
+    });
 });
 
 /***/ }),

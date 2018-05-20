@@ -24,7 +24,7 @@
                                     Excellent Patient care is knocking your Door.
                                 </h4>
                                 <p>Making the online health care appointment possible.</p>
-                                <a href="#" class="btn btn-more btn-lg i-right">Book Now <i class="fa fa-plus"></i></a>
+                                <a href="/register" class="btn btn-more btn-lg i-right">Register Now <i class="fa fa-plus"></i></a>
                             </div>
                             <div class="col-md-6 col-md-pull-6 hidden-xs">
                                 <img src="img/slides/slide1.jpg" alt="Slide 1" class="center-block img-responsive">
@@ -32,25 +32,7 @@
                         </div>
                     </div>
                     <!--Slide 2-->
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-6 text-right-md item-caption">
-                                <h2 class="h1 text-weight-light">
-                                    <span class="text-primary">Appointment</span> Online Booking System
-                                </h2>
-                                <h4>
-                                    High quality and reliable care on your way.
-                                </h4>
-                                <p>Making the online health care appointment possible</p>
-                                <a href=""#" class="btn btn-more btn-lg"><i class="fa fa-plus"></i> Learn More</a>
-                            </div>
-                            <div class="col-md-6 hidden-xs">
-                                <img src="img/slides/slide2.jpg" alt="Slide 2" class="center-block img-responsive">
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </div>
     </div>
@@ -81,7 +63,7 @@
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-group fa-stack-1x fa-inverse"></i> </span>
                     <h4 class="text-weight-strong">
-                        Online Doctor
+                        Psychological Counseling
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -92,7 +74,7 @@
             <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-pencil fa-stack-1x fa-inverse"></i> </span>
-                    <h4> Online Booking
+                    <h4 class="text-weight-strong"> Clinical Neuropsychologists
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -103,7 +85,7 @@
             <span class="fa-stack fa-5x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
               <i class="fa fa-cogs fa-stack-1x fa-inverse"></i> </span>
-                    <h4 class="text-weight-strong">Support
+                    <h4 class="text-weight-strong">Clinical and Health Psychologists
                     </h4>
                     <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
                     <p>
@@ -127,7 +109,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
             Of Happy Customers!
         </h3>
         <p>
-            <a href="#" class="btn btn-more btn-lg i-right">Join them today! <i class="fa fa-angle-right"></i></a>
+            <a href="/register" class="btn btn-more btn-lg i-right">Join them today! <i class="fa fa-angle-right"></i></a>
         </p>
     </div>
     <!--Customer testimonial & Latest Blog posts-->

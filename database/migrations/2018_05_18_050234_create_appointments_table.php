@@ -18,6 +18,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('time');
             $table->integer('doctor')->unsigned();
             $table->integer('userid')->unsigned();
+            $table->integer('status')->string()->nullable();
             $table->text('description');
             $table->timestamps();
         });

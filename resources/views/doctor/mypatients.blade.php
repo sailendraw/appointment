@@ -54,7 +54,7 @@
 					<div class="card">
 						<div class="header">
 							<h2>
-								Upcomming Appointment
+								My Doctors
 								<small>All your Appointment are shown here, you can reschedule or cancel any appointment</small>
 							</h2>
 							<ul class="header-dropdown m-r--5">
@@ -76,23 +76,18 @@
 								<tr>
 									<th>#</th>
 									<th>Doctor Name</th>
-									<th>Due Date</th>
 									<th>Action</th>
 								</tr>
 								</thead>
 								<tbody>
-
-
-
-
-								@foreach($appointmentdata as $appointment)
+								@foreach($mydoctors as $doctor)
 									<tr>
-										<th scope="row">{{$appointment->id}}</th>
-										<td>{{$appointment->first_name}}</td>
-										<td>{{$appointment->time}}</td>
-										<td><button class="btn btn-primary m-t-15 waves-effect patientappointment" data-appoinmetnid="{{$appointment->id}}" data-doctorid="{{$appointment->doctor}}" data-patientid="{{Auth::user()->id}}">Re-Schedule</button> &nbsp;<button class="btn btn-primary m-t-15 waves-effect cancelappointment" data-appointmentid="{{$appointment->id}}">Cancel</button></td>
+										<th scope="row">{{$doctor->id}}</th>
+										<td>{{$doctor->doctor}}</td>
+
+										<td><button class="btn btn-primary m-t-15 waves-effect" data-id="{{$doctor->id}}">Schedule Appointment</button></td>
 									</tr>
-									@endforeach
+								@endforeach
 
 
 								</tbody>

@@ -14,9 +14,10 @@ class Doctor extends Model
 {
     public $doctorModel;
 
-    public function __construct(DoctorModel $doctorModel){
-        $this->doctorModel = $doctorModel;
-        // $this->doctorModel = new DoctorModel();
+    public function __construct(){
+//        DoctorModel $doctorModel;
+//        $this->doctorModel = $doctorModel;
+         $this->doctorModel = new DoctorModel();
 
     }
 

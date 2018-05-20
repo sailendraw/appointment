@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="_token" content="{{ csrf_token() }}"/>
     <title>Welcome To  Dashboard</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -76,6 +77,8 @@
 <script src="{{ asset('dashboardjs/js/admin.js') }}"></script>
 <script src="{{ asset('dashboardjs/js/pages/index.js') }}"></script>
 <script src="{{ asset('dashboardjs/js/pages/forms/form-validation.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="{{asset('js/app.js')}}"></script>
 <!-- Demo Js -->
 <script src="{{ asset('dashboardjs/js/demo.js') }}"></script>
 </body>

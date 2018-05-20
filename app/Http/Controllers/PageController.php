@@ -9,9 +9,13 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Appointment;
+use App\Models\Doctor;
 use App\SiteConfig;
 use App\Role;
 use function Couchbase\defaultDecoder;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 
 class PageController extends Controller
 {
@@ -51,5 +55,20 @@ class PageController extends Controller
     public function makeappointment($doctorid)
     {
         return view('appointment.makeappointment',['doctorid'=>$doctorid]);
+    }
+    public function mydoctors()
+    {
+        $patient = new Appointment();
+        $mydoctors=$patient->doctor(Auth::user()->id);
+          return view('patient.mydoctors',['mydoctors'=>$mydoctors]);
+    }
+    public function patients()
+    {
+        $patient = new Appointment();
+
+        $doctormodel = Doctor::where('user_id','=',Auth::user()->id)->get(['id']);
+        $mydoctors=$patient->doctor($doctormodel[0]->id);
+
+        return view('patient.mydoctors',['mydoctors'=>$mydoctors]);
     }
 }
