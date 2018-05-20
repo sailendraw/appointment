@@ -69,6 +69,15 @@
 									</li>
 								</ul>
 							</div>
+							<div id="ex1" class="modal">
+								<form action="" method="post">
+
+
+
+
+
+								</form>
+							</div>
 							<div class="body table-responsive">
 								<table class="table">
 									<thead>
@@ -86,7 +95,9 @@
 											<th scope="row">{{$patient->id}}</th>
 											<td>{{$patient->name}}</td>
 											<td>{{$patient->email}}</td>
-											<td><button class="btn btn-primary m-t-15 waves-effect">Schedule Appointment</button>&nbsp;<button class="btn btn-primary m-t-15 waves-effect">Cancel Appointment</button>&nbsp;<button class="btn btn-primary m-t-15 waves-effect">Reschedule Appointment</button></td>
+
+											<td><a class="btn btn-primary m-t-15 waves-effect " href="#ex1" rel="modal:open">Schedule Appointment</a>&nbsp;<button class="btn btn-primary m-t-15 waves-effect">Cancel Appointment</button>&nbsp;<button class="btn btn-primary m-t-15 waves-effect">Reschedule Appointment</button></td>
+
 										</tr>
 
 									@endforeach
@@ -103,7 +114,6 @@
 				<!-- #END# Vertical Layout -->
 				<!-- Vertical Layout | With Floating Label -->
 
-			</div>
 	</section>
 
 @endsection

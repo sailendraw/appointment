@@ -28,6 +28,8 @@
 
     <!-- Custom Css -->
     <link href="{{asset('dashboardcss/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('dashboardcss/remodal.css')}}" rel="stylesheet">
+    <link href="{{asset('dashboardcss/css/remodal-default.css')}}" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="{{ asset('dashboardcss/css/themes/all-themes.css') }}" rel="stylesheet" />
@@ -78,6 +80,8 @@
 <script src="{{ asset('dashboardjs/js/pages/index.js') }}"></script>
 <script src="{{ asset('dashboardjs/js/pages/forms/form-validation.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script src="{{asset('js/app.js')}}"></script>
 <!-- Demo Js -->
 <script src="{{ asset('dashboardjs/js/demo.js') }}"></script>
